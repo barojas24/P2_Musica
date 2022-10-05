@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityColaReproduccion">
+    tools:context=".ActivityColaReproduccion"
+    android:background="#000">
 
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.p2_musica.ItemFragment"
-        android:layout_width="332dp"
-        android:layout_height="576dp"
+        android:layout_width="357dp"
+        android:layout_height="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,19 +22,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="78dp" />
+        app:layout_constraintGuide_begin="28dp" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="261dp"
         android:layout_height="50dp"
         android:background="@drawable/borderedondo"
-        android:text="Button"
         android:onClick="terminarColaRepro"
+        app:layout_constraintBottom_toTopOf="@+id/guideline22"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="29dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -41,7 +41,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cola de reproducción"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline22"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp" />
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
