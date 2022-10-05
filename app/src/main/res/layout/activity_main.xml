@@ -4,36 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="91dp"
-        tools:ignore="MissingConstraints" />
-
-    <FrameLayout
-        android:id="@+id/frag_buscar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints" />
+    tools:context=".MainActivity"
+    android:background="#000">
 
     <fragment
         android:id="@+id/fragment"
         android:name="com.example.p2_musica.FragmentSubMenu"
-        android:layout_width="0dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="408dp"
+        android:layout_height="595dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <fragment
@@ -41,8 +21,8 @@
         android:name="com.example.p2_musica.FragmentReproCancion"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginTop="1170dp"
-        app:layout_constraintBottom_toTopOf="@+id/frag_buscar"
+        android:layout_marginTop="1250dp"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/fragment"

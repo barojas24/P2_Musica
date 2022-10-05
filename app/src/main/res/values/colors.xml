@@ -4,9 +4,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorPrimary2">#344955</color>
+    <color name="colorPrimary2">#003700</color>
     <color name="colorPrimaryDark2">#232F34</color>
     <color name="colorAccent2">#E4F9AA33</color>
     <color name="gris">#4A6572</color>
+
+    <color name="cPrimario">#096309</color>
+    <color name="cPrimarioOscuro">#003700</color>
+    <color name="cPrimarioLuz">#459239</color>
+    <color name="cSecundario">#ffff00</color>
+    <color name="cSecundarioOscuro">#C7CC00</color>
+    <color name="cSecundarioLuz">#FFFF5A</color>
 
 </resources>

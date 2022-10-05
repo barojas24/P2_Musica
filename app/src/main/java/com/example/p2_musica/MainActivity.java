@@ -74,11 +74,11 @@ public boolean onOptionsItemSelected(MenuItem item){
     return true;
 }
     public void menuBuscar(MenuItem item) {
-        FragmentBuscar fragmentBuscar=new FragmentBuscar();
+      /*  FragmentBuscar fragmentBuscar=new FragmentBuscar();
         FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction ft=fm.beginTransaction();
         ft.add(R.id.frag_buscar,fragmentBuscar,"");
-        ft.commit();
+        ft.commit();*/
     }
 
     public void abrirFragmentoRepro(View view) {

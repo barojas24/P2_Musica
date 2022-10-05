@@ -11,5 +11,5 @@
     app:layoutManager="LinearLayoutManager"
     tools:context=".ItemFragment"
     tools:listitem="@layout/fragment_item"
-    android:background="@color/gris"
-    android:textColor="@color/colorAccent2"/>
+    android:background="#000"
+    android:textColor="@color/cSecundarioLuz"/>
