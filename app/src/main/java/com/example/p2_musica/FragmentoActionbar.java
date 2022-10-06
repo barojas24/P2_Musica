@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class FragmentBuscar extends Fragment {
+public class FragmentoActionbar extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState){
-        View v=inflater.inflate(R.layout.fragmento_buscar,container,false);
+        View v=inflater.inflate(R.layout.fragmento_actionbar,container,false);
         return v;
     }
 }

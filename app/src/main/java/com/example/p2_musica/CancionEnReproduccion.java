@@ -1,9 +1,12 @@
 package com.example.p2_musica;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,6 +29,11 @@ public class CancionEnReproduccion extends AppCompatActivity {
 
     public void abrirColaRepro(View view) {
         Intent i=new Intent(this,ActivityColaReproduccion.class);
+        startActivity(i);
+    }
+
+    public void temporizarApagado(View view) {
+        Intent i=new Intent(this,ActivityTemporizador.class);
         startActivity(i);
     }
 }
