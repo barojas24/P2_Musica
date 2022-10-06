@@ -57,34 +57,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.main_menu,menu);
-        return true;
-    }
-public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case R.id.app_bar_search:
-                menuBuscar(item);
-                break;
-                default:
-                    break;
-        }
-    return true;
-}
-    public void menuBuscar(MenuItem item) {
-      /*  FragmentBuscar fragmentBuscar=new FragmentBuscar();
-        FragmentManager fm=getSupportFragmentManager();
-        FragmentTransaction ft=fm.beginTransaction();
-        ft.add(R.id.frag_buscar,fragmentBuscar,"");
-        ft.commit();*/
-    }
+
 
     public void abrirFragmentoRepro(View view) {
 
         Log.i("MainActivity", "Se a dado click en la imagen" );
         Intent i=new Intent(this,CancionEnReproduccion.class);
         startActivity(i);
+    }
+
+    public void abrirActBuscar(View view) {
+        Log.i("MainActivity", "Se a dado click en busqueda" );
+        Intent i=new Intent(this,ActivityBusqueda.class);
+        startActivity(i);
+
+
     }
 }
